@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "zdvibsog",
+    "password": "vn2o2xaJILYknUu379L5rBr1cQgD8XXD",
+    "database": "zdvibsog",
+    "host": "queenie.db.elephantsql.com",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "admin",
+    "password": "$chapel%hill+",
+    "database": "live",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
