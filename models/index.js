@@ -10,7 +10,8 @@ const db = {};
 
 let sequelize;
 
-sequelize = new Sequelize(process.env.POSTGRESS_CLOUD_URL);
+// sequelize = new Sequelize(process.env.POSTGRESS_CLOUD_URL);
+sequelize = new Sequelize(config.database, config.username, config.password, config);
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;

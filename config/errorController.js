@@ -1,10 +1,6 @@
 module.exports = async(err, req, res, next)=>{
     
     console.error(err.name, err.message, err.stack);
-    res.locals.resp = {
-        code: err.statusCode || 500,
-        message: err.message
-    }
 
     if(process.env.NODE_ENV === 'development') {
         res.status(err.statusCode || 500).json({
